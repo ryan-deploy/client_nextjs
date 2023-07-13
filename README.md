@@ -19,6 +19,20 @@
   - `npm run prettier`
   - Get Prettier VS Code extension to handle the formatting of the files and we don't need to reply on the command line tool
 
+## Git Hooks
+
+Husky is a tool for running script at different stages of the git process.
+
+- `npm i -D husky`
+- `npx husky install`
+- Ensure Husky gets installed automatically when other developments run the project
+  ```
+  scripts: {
+    "prepare": "husky install"
+  }
+  ```
+- To create a hook run `npx husky add .husky/pre-commit "npm run lint"`
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
