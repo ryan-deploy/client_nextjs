@@ -15,6 +15,8 @@
 - eslint - For best practices on coding standards
   - Test config by running: `npm run lint`
 - prettier - For automatic formatting of code files
+  - Only needed during development: `npm i -D prettier`
+  - Get Prettier VS Code extension to handle the formatting of the files and we don't need to reply on the command line tool
 
 ## References
 
