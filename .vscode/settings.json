@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 指定编辑器的默认格式化程序使用的是 esbenp.prettier-vscode 扩展
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true, // 在保存文件时自动修复所有可修复的问题
+    "source.organizeImports": true // 在保存文件时自动整理导入语句
+  } // 在保存文件时自动执行的代码操作
+}

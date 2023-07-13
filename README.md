@@ -42,6 +42,10 @@ Ensure that everyone on the team is following a standard convertion for all comm
 - `/commitlint.config.js`
 - `npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'` or `npx husky add .husky/commit-msg \"npx --no -- commitlint --edit '$1'\"` or `npx husky add .husky/commit-msg "npx --no -- commitlint --edit $1"`
 
+## VS Code Configuration
+
+Override the default settings of your installed VS Code that only apply to this project.
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
