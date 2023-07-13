@@ -34,6 +34,14 @@ Husky is a tool for running script at different stages of the git process.
 - To create a hook run `npx husky add .husky/pre-commit "npm run lint"` (Run `npm run lint` when we make a commit)
 - `npx husky add .husky/pre-push "npm run build"`
 
+## Commitlint
+
+Ensure that everyone on the team is following a standard convertion for all commit messages.
+
+- `npm i -D @commitlint/config-conventional @commitlint/cli`
+- `/commitlint.config.js`
+- `npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'` or `npx husky add .husky/commit-msg \"npx --no -- commitlint --edit '$1'\"` or `npx husky add .husky/commit-msg "npx --no -- commitlint --edit $1"`
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
