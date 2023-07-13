@@ -31,7 +31,8 @@ Husky is a tool for running script at different stages of the git process.
     "prepare": "husky install"
   }
   ```
-- To create a hook run `npx husky add .husky/pre-commit "npm run lint"`
+- To create a hook run `npx husky add .husky/pre-commit "npm run lint"` (Run `npm run lint` when we make a commit)
+- `npx husky add .husky/pre-push "npm run build"`
 
 ## References
 
