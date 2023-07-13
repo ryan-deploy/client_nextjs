@@ -10,6 +10,12 @@
 
 .nvmrc 文件是用来管理项目使用的 node.js 版本的。它包含一个 nvm 可识别的 node.js 版本文本。.nvmrc 文件中的 lts/gallium 表示使用长期支持版本（Long Term Support, LTS）的 Gallium 版本（[We can check the codename by this link](https://github.com/nodejs/release#release-schedule)）。
 
+## Code Formatting and Quality Tools
+
+- eslint - For best practices on coding standards
+  - Test config by running: `npm run lint`
+- prettier - For automatic formatting of code files
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)

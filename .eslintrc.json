@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next", "next/core-web-vitals", "eslint:recommended"], // extends 属性指定了一组扩展配置，它们定义了一组预设的规则，扩展了 next、next/core-web-vitals 和 eslint:recommended 配置
+  "globals": {
+    "React": "readonly" // 定义了一个全局变量 React，并将其设置为只读（Then React will always be defined even if we don't specifically import it）
+  }, // globals 属性定义了一组全局变量，可以在代码中直接使用而不会触发未定义变量的警告
+  "rules": {
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }] // 定义了一个规则 no-unused-vars，它用于检查未使用的变量。该规则被设置为警告级别（1），并且只检查使用过的参数。如果参数名称以 _ 开头，则忽略该参数。
+  } // rules 属性定义了一组自定义规则，它们覆盖了扩展配置中的规则
 }
