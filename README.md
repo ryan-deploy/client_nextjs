@@ -50,6 +50,10 @@ Override the default settings of your installed VS Code that only apply to this 
 
 `/.vscode/launch.json`
 
+## BaseTemplate
+
+Create each componet base on BaseTemplate.
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
