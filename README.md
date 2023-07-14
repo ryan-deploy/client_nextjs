@@ -54,6 +54,10 @@ Override the default settings of your installed VS Code that only apply to this 
 
 Create each componet base on BaseTemplate.
 
+## Adding a Custom Document
+
+Link a font family named Quicksand in Custom Document component: MyDocument
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
