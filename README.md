@@ -62,6 +62,10 @@ Link a font family named Quicksand in Custom Document component: MyDocument
 
 By making and implementing a function called **getLayout**
 
+## Deployment
+
+Deploy with Vercel, [check this out](https://client-nextjs.vercel.app/)
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
