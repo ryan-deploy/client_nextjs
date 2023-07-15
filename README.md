@@ -58,6 +58,10 @@ Create each componet base on BaseTemplate.
 
 Link a font family named Quicksand in Custom Document component: MyDocument
 
+## Adding Layouts
+
+By making and implementing a function called **getLayout**
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
