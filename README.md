@@ -66,6 +66,15 @@ By making and implementing a function called **getLayout**
 
 Deploy with Vercel, [check this out](https://client-nextjs.vercel.app/)
 
+## Domains in Vercel
+
+- `Another Vercel account is using this domain. Please set the following TXT record on _vercel.tangzhenming.com to use nextjs.tangzhenming.com in this project. Once the verification is completed and the domain is successfully configured, the TXT record can be removed`
+  - To solve this issue, we need to set a TXT record in our DNS provider's website(For me is [Alibaba](https://dns.console.aliyun.com/?spm=5176.12818093_-1363046575.products-recent.ddns.3be916d0TrKPtQ#/dns/setting/tangzhenming.com)), then Vercel knows that you're the owner of this domain
+- Set a CNAME record with name of `nextjs.tangzhenming.com` and value of `cname.vercel-dns.com` in the DNS provider's website
+- Add a Domain `next.tangzhenming.com` in Vercel Project(In this case is **client-nextjs**) Settings
+- Now when we visite either [https://nextjs.tangzhenming.com/](https://nextjs.tangzhenming.com/) or [https://client-nextjs.vercel.app/](https://client-nextjs.vercel.app/), we'll get to the `client-nextjs` project
+- Redirect `client-nextjs.vercel.app` to `next.tangzhenming.com` if you want to
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
