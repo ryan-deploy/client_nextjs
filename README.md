@@ -75,6 +75,10 @@ Deploy with Vercel, [check this out](https://client-nextjs.vercel.app/)
 - Now when we visite either [https://nextjs.tangzhenming.com/](https://nextjs.tangzhenming.com/) or [https://client-nextjs.vercel.app/](https://client-nextjs.vercel.app/), we'll get to the `client-nextjs` project
 - Redirect `client-nextjs.vercel.app` to `next.tangzhenming.com` if you want to
 
+## UI components for React
+
+[PRIMEREACT](https://primereact.org/installation/)
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
