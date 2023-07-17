@@ -46,6 +46,8 @@ Ensure that everyone on the team is following a standard convertion for all comm
 
 Override the default settings of your installed VS Code that only apply to this project.
 
+[Check this file out.](https://github.com/ryan-deploy/client_nextjs/blob/main/.vscode/settings.json)
+
 ## Debugging in VS Code
 
 `/.vscode/launch.json`
@@ -54,13 +56,17 @@ Override the default settings of your installed VS Code that only apply to this 
 
 Create each componet base on BaseTemplate.
 
+[Here is the commit of creating the component of BaseTemplate.](https://github.com/ryan-deploy/client_nextjs/commit/792634ebfe12b9d5107575522d024ec085c5454b)
+
 ## Adding a Custom Document
 
-Link a font family named Quicksand in Custom Document component: MyDocument
+[Link a font family named Quicksand in Custom Document component: MyDocument.](https://github.com/ryan-deploy/client_nextjs/commit/9072311db7b587a5aca3bb30857ea192c7e04592)
 
 ## Adding Layouts
 
-By making and implementing a function called **getLayout**
+By making and implementing a function called **getLayout**.
+
+[Check this commit out.](https://github.com/ryan-deploy/client_nextjs/commit/7d85848867709bd45c83aaf03ae1acf7a1f263ff)
 
 ## Deployment
 
