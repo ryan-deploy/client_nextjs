@@ -85,6 +85,33 @@ Deploy with Vercel, [check this out](https://client-nextjs.vercel.app/)
 
 [PRIMEREACT](https://primereact.org/installation/)
 
+## Adding Tailwind
+
+Related VS Code extension: [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss).
+
+In this project, We've added Tailwind already when we init the project by `npx create-next-app --ts`.
+
+We use these three pakages for implementing Tailwind:
+
+- tailwindcss
+- postcss
+- autoprefixer
+
+Postcss and autoprefixer are tools for transforming CSS that Tailwind uses to do its job.
+
+Some configuration files:
+
+- [`tailwind.config.js`](https://github.com/ryan-deploy/client_nextjs/blob/main/tailwind.config.js)
+- [`postcss.config.js](https://github.com/ryan-deploy/client_nextjs/blob/main/postcss.config.js)
+- `globals.css`
+  ```css
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  ```
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
+
+[How to Build a Fullstack Next.js App (with Storybook & TailwindCSS)](https://dev.to/alexeagleson/how-to-build-a-fullstack-nextjs-application-with-storybook-tailwindcss-2gfa)
