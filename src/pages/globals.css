@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* [Reusing Styles](https://tailwindcss.com/docs/reusing-styles) */
+/* [@layer](https://tailwindcss.com/docs/functions-and-directives#layer) */
+@layer components {
+  .btn-primary {
+    @apply border-0 p-2 px-6 bg-slate-100 rounded-md;
+  }
+}
