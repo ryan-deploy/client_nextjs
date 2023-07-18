@@ -1,5 +1,23 @@
 # CLIENT_NEXTJS
 
+Here're concepts that nearly everyone building a professional Next.js app will encounter in the process of development:
+
+Must haves:
+
+- Styling
+- Routing
+- API routes
+- Static and dynamic pages
+- Image optimization
+
+Nice-to-haves:
+
+- Sharing state between routes
+- Authentication
+- Internationalization
+- Unit and end-to-end testing
+- Data persistence (database)
+
 ## Project Setup
 
 `npx create-next-app --ts client_nextjs`
