@@ -103,6 +103,8 @@ Deploy with Vercel, [check this out](https://client-nextjs.vercel.app/)
 
 [PRIMEREACT](https://primereact.org/installation/)
 
+[Material UI](https://mui.com/material-ui/getting-started/)
+
 ## Adding Tailwind
 
 Related VS Code extension: [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss).
