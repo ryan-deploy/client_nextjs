@@ -1,7 +1,6 @@
 import CatCard from '@/components/cards/cat/CatCard';
 import { mockCatCardProps } from '@/components/cards/cat/CatCard.mocks';
 import PrimaryLayout from '@/components/layouts/primary/PrimaryLayout';
-import SidebarLayout from '@/components/layouts/sidebar/SidebarLayout';
 import Search from '@/components/utils/base/Search';
 import Button from '@mui/material/Button';
 import { NextPageWithLayout } from './page';
@@ -19,10 +18,5 @@ const Home: NextPageWithLayout = () => {
 export default Home;
 
 Home.getLayout = (page) => {
-  return (
-    <PrimaryLayout>
-      <SidebarLayout />
-      {page}
-    </PrimaryLayout>
-  );
+  return <PrimaryLayout>{page}</PrimaryLayout>;
 };
