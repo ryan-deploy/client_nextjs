@@ -1,4 +1,8 @@
 {
+  "tailwindCSS.emmetCompletions": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  }, // By default VS Code will not trigger completions when editing "string" content, for example within JSX attribute values. Updating the editor.quickSuggestions setting may improve your experience
   "editor.defaultFormatter": "esbenp.prettier-vscode", // 指定编辑器的默认格式化程序使用的是 esbenp.prettier-vscode 扩展
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
