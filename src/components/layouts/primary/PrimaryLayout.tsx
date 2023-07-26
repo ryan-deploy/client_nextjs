@@ -11,11 +11,14 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children, ...divProps }) => {
         <title>PrimaryLayout</title>
       </Head>
 
-      <TopBar />
-      <div {...divProps}>
-        <main className="flex">{children}</main>
+      <div
+        className="h-screen bg-sky-50 flex flex-col justify-between"
+        {...divProps}
+      >
+        <TopBar />
+        <main className="flex-grow">{children}</main>
+        <TabBar />
       </div>
-      <TabBar />
     </>
   );
 };
