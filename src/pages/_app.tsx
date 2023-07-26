@@ -16,7 +16,14 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page);
 
-  return <div>{getLayout(<Component {...pageProps} />)}</div>;
+  return (
+    <>
+      {/* [Viewport `meta` tags should not be used in `_document.js` `<Head>`](https://nextjs.org/docs/messages/no-document-viewport-meta) */}
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+      {getLayout(<Component {...pageProps} />)}
+    </>
+  );
 }
 
 export default MyApp;
