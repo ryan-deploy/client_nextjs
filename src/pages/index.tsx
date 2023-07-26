@@ -1,18 +1,8 @@
-import CatCard from '@/components/cards/cat/CatCard';
-import { mockCatCardProps } from '@/components/cards/cat/CatCard.mocks';
 import PrimaryLayout from '@/components/layouts/primary/PrimaryLayout';
-import Search from '@/components/utils/base/Search';
-import Button from '@mui/material/Button';
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
-  return (
-    <section className="w-screen bg-gradient-to-r from-cyan-500 to-blue-500">
-      <Search />
-      <CatCard {...mockCatCardProps.base} />
-      <Button variant="contained">Hello World</Button>
-    </section>
-  );
+  return <section>home</section>;
 };
 
 export default Home;

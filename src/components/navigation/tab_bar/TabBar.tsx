@@ -1,5 +1,5 @@
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import RestoreIcon from '@mui/icons-material/Restore';
+import AccountBoxSharpIcon from '@mui/icons-material/AccountBoxSharp';
+import HomeSharpIcon from '@mui/icons-material/HomeSharp';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import { useRouter } from 'next/router';
@@ -24,13 +24,13 @@ const TabBar: React.FC<ITabBar> = ({ ...divProps }) => {
       >
         <BottomNavigationAction
           value="/"
-          label="Recents"
-          icon={<RestoreIcon />}
+          label="Home"
+          icon={<HomeSharpIcon />}
         />
         <BottomNavigationAction
-          value="/about"
-          label="Favorites"
-          icon={<FavoriteIcon />}
+          value="/user"
+          label="User"
+          icon={<AccountBoxSharpIcon />}
         />
       </BottomNavigation>
     </div>
