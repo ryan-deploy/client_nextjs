@@ -13,9 +13,9 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 
-export interface IHeader extends React.ComponentPropsWithoutRef<'header'> {}
+export interface ITopBar extends React.ComponentPropsWithoutRef<'header'> {}
 
-const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
+const TopBar: React.FC<ITopBar> = ({ ...headerProps }) => {
   const pages = ['Products', 'Pricing', 'Blog'];
   const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -36,10 +36,7 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
   };
 
   return (
-    <header
-      {...headerProps}
-      className={`w-full flex flex-row justify-between ${className}`}
-    >
+    <header {...headerProps}>
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
@@ -165,4 +162,4 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
   );
 };
 
-export default Header;
+export default TopBar;

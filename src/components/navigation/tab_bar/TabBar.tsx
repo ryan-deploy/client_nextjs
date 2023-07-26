@@ -7,16 +7,13 @@ import { useState } from 'react';
 
 export interface ITabBar extends React.ComponentPropsWithoutRef<'div'> {}
 
-const TabBar: React.FC<ITabBar> = ({ className, ...divProps }) => {
+const TabBar: React.FC<ITabBar> = ({ ...divProps }) => {
   const router = useRouter();
   const { pathname } = router;
   const [value, setValue] = useState(pathname);
 
   return (
-    <div
-      {...divProps}
-      className={`w-full p-5 bg-slate-100 text-slate-500 ${className}`}
-    >
+    <div {...divProps}>
       <BottomNavigation
         showLabels
         value={value}

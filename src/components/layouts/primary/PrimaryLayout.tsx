@@ -1,5 +1,5 @@
-import Footer from '@/components/navigation/tab_bar/TabBar';
-import Header from '@/components/navigation/top_bar/TopBar';
+import TabBar from '@/components/navigation/tab_bar/TabBar';
+import TopBar from '@/components/navigation/top_bar/TopBar';
 import Head from 'next/head';
 
 export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {}
@@ -11,11 +11,11 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children, ...divProps }) => {
         <title>PrimaryLayout</title>
       </Head>
 
-      <Header />
+      <TopBar />
       <div {...divProps}>
         <main className="flex">{children}</main>
       </div>
-      <Footer />
+      <TabBar />
     </>
   );
 };
