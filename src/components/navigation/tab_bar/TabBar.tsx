@@ -9,10 +9,8 @@ export interface ITabBar extends React.ComponentPropsWithoutRef<'div'> {}
 
 const TabBar: React.FC<ITabBar> = ({ className, ...divProps }) => {
   const router = useRouter();
-  console.log(router);
-  // By using this way to set default value for "value" state, it cause a issue that
-  //  when user input http://localhost:3000/about, the app shows about component in screen but BottomNavigation sets the "/" as value which should be "/about", and active the wrong button
-  const [value, setValue] = useState('/');
+  const { pathname } = router;
+  const [value, setValue] = useState(pathname);
 
   return (
     <div
