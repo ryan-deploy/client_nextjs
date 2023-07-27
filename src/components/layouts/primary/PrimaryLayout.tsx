@@ -1,5 +1,6 @@
 import TabBar from '@/components/navigation/tab_bar/TabBar';
 import TopBar from '@/components/navigation/top_bar/TopBar';
+import { grey } from '@mui/material/colors';
 import Head from 'next/head';
 
 export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {}
@@ -12,7 +13,8 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children, ...divProps }) => {
       </Head>
 
       <div
-        className="h-screen bg-sky-50 flex flex-col justify-between"
+        className="h-screen flex flex-col justify-between"
+        style={{ backgroundColor: grey[50] }}
         {...divProps}
       >
         <TopBar />
