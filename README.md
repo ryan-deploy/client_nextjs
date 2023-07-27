@@ -130,6 +130,14 @@ Some configuration files:
   @tailwind utilities;
   ```
 
+## Features
+
+### Virtualized List
+
+[react-window](https://github.com/bvaughn/react-window)
+
+Noticed that we should calclate the height of virtualized list with querySelector.
+
 ## References
 
 [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
