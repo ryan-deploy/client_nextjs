@@ -18,7 +18,9 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children, ...divProps }) => {
         {...divProps}
       >
         <TopBar />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow overflow-x-hidden overflow-y-scroll">
+          {children}
+        </main>
         <TabBar />
       </div>
     </>

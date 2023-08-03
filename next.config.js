@@ -1,13 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: 'https',
+  //       hostname: '**.pixabay.com',
+  //     },
+  //   ],
+  // },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**.pixabay.com',
-      },
-    ],
+    domains: ['images.unsplash.com', '**.pixabay.com'],
   },
 };
 

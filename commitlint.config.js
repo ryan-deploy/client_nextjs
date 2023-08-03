@@ -15,7 +15,7 @@ module.exports = {
     'body-max-line-length': [2, 'always', 100],
     'footer-leading-blank': [1, 'always'],
     'footer-max-line-length': [2, 'always', 100],
-    'header-max-length': [2, 'always', 100],
+    'header-max-length': [2, 'always', 120],
     'scope-case': [2, 'always', 'lower-case'],
     'subject-case': [2, 'never', ['lower-case', 'upper-case']], // 不能全部为小写或者全部为大写
     'subject-empty': [2, 'never'],
