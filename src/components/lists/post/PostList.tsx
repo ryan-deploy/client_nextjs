@@ -44,7 +44,12 @@ function MasonryImageList(list: IPostListItem[]) {
               alt={item.title}
               width={imageSizes[item.img].width}
               height={imageSizes[item.img].height}
-              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              style={{
+                objectFit: 'cover',
+                objectPosition: 'center',
+                maxHeight: 280,
+                minHeight: 180,
+              }}
               priority={index < 10} // 和 loading="lazy" 只能二选一；加了 priority 属性，那么 Next.js 会优先加载这张图片，而不使用懒加载技术。这意味着这张图片会在页面加载时立即开始加载，而不是等到进入用户视口时再加载；而对于其他图片，由于省略了 loading 属性，因此它们会使用懒加载技术来加载。也就是说，这些图片只有在进入用户的视口时才会开始加载
             />
           ) : null}
